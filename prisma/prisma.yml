@@ -1,5 +1,7 @@
 endpoint: ${env:PRISMA_API}
-datamodel: datamodel.prisma
+datamodel: 
+  - product/model.prisma
+  - transaction/model.prisma
 
 generate:
   - generator: javascript-client

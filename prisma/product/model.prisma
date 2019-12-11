@@ -1,0 +1,6 @@
+type Product {
+  id: ID! @id @unique
+  name: String!
+  createdAt: DateTime! @createdAt
+  transactions: [Transaction!]
+}
