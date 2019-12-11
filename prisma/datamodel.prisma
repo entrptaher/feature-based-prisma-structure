@@ -1,0 +1,13 @@
+type Product {
+  id: ID! @id @unique
+  name: String!
+  createdAt: DateTime! @createdAt
+  transactions: [Transaction!]
+}
+
+type Transaction {
+    id: ID! @id @unique
+    quantity: Int!
+    product: Product! @relation(link: INLINE)
+    createdAt: DateTime! @createdAt
+}
