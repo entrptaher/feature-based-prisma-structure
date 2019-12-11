@@ -1,5 +1,8 @@
 # Instructions
 
+- [Project Structure](project-structure.md)
+- [Resolvers](resolvers.md)
+
 ## Step 1: Create database endpoint
 Follow the instruction to install prisma and [create a new demo prisma database](https://www.prisma.io/docs/-a001/). You will also find how to setup your own database using docker if you are interested.
 
