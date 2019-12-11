@@ -30,15 +30,15 @@ src
 Every feature in the project has it's own folder in the resolvers. Here are the possible usage for the specific files.
 
 ### Common files most feature may have
-- fragment: Prisma client needs the specific fragments to restrict the data it gets from the database.
+- fragment: Prisma client needs the specific fragments to restrict the data it gets from the database. The user will only get the data you put here, this will also make sure they don't ask for data that wasn't intended for them.
 - mutation: Actions like creating, deleting, updating etc.
 - query: Finding the products/feature details.
 
 ### Additional files some features may have
-- queue: If we use a job queue, the publisher should go there.
-- action: If we use a job queue, the subscriber should go there.
 - subscription: Some features might have to be realtime. The pubsub and other related stuff.
 - utils: Anything not related to the prisma, like a time conversion function.
+- queue: If we use a job queue, the publisher should go there.
+- action: If we use a job queue, the subscriber should go there.
 
 ## Common files between features
 
